@@ -83,12 +83,24 @@ Con todo esto, vamos a la terminal y nos situamos en el directorio donde se encu
 ```
   sudo docker-compose up -d
   ```
+
+Ahora podremos ir a las páginas. Si vamos al localhost:8080 veremos como se despliega la página principal y como podemos registarnos y loguearnos.
+  
+![1](https://user-images.githubusercontent.com/91748294/172957693-e01ae2d8-261c-4219-b945-562bd981cfc1.jpeg)
+  
+![3](https://user-images.githubusercontent.com/91748294/172957772-7176b888-cac0-4cd6-b915-20bdbb591b12.jpeg)
+  
+![2](https://user-images.githubusercontent.com/91748294/172957782-b1f7ccac-fc9a-486e-98ab-b8f865df4d8f.jpeg)
+  
+![4](https://user-images.githubusercontent.com/91748294/172957788-69747850-68a0-41d0-ac7a-c4b2b20d4182.jpeg)
   
 </div>
 
 <div id= 'img'>
 
 ## Preparación y subida de la imagen
+  
+Ahora con nuestro proyecto desplegado procederemos a crear una imagen y contenedor, para luego subirlo en el DockerHub
   
 </div>
 
