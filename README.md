@@ -100,19 +100,56 @@ Ahora podremos ir a las páginas. Si vamos al localhost:8080 veremos como se des
 
 ## Preparación y subida de la imagen
   
-Ahora con nuestro proyecto desplegado procederemos a crear una imagen y contenedor, para luego subirlo en el DockerHub
+Ahora con nuestro proyecto desplegado procederemos a crear una imagen y contenedor, para luego subirlo en el DockerHub.
+  
+Empezaremos por crear el Dockerfile
+
+```
+FROM tomcat:latest
+
+LABEL maintainer="DavidMuletMelia"
+
+ADD ./target/Gestion_Proyectos.war /usr/local/tomcat/webapps/
+
+EXPOSE 8080
+
+CMD ["catalina.sh", "run"]
+  ```
+Y ejecutamos el comando para monstar la imagen:
+
+  ```
+  docker build -t davidmuletmelia/gestionproyectos:latest
+  ```
+  ![6 (2)](https://user-images.githubusercontent.com/91748294/172959140-49070098-e48b-4f3a-945d-2dbda0a70cd7.jpeg)
+
+Ahora procederemos a subirlo al dockerHub
+  
+  ```
+docker push davidmuletmelia/gestionproyectos:latest
+  ```
+![7](https://user-images.githubusercontent.com/91748294/172959310-4a1b6139-e6d9-482b-bf47-82e558267314.jpeg)
+  
+Si todo ha salido bien nos saldría algo así, con esto ya podriamos bajarnos el contenedor en cualquier ordenador y ejecutarlo:
+  
+  ![8](https://user-images.githubusercontent.com/91748294/172959404-60e131a5-5749-403e-8786-793927f3c957.jpeg)
   
 </div>
 
 <div id= 'con'>
 
 ## Conclusiones
+
+Hemos utilizado como bases los archivos de otro proyecto que ya funcionaba y hemos sustitudo el .war y el .sql por los nuestros.
+
+La parte mas complicada ha sido el funcionamiento de la base de datos, ha dado muchos problemas por los puertos y credenciales.
   
 </div>
 
 <div id= 'anex'>
 
 ## Annexo
+  
+[Link del contendor en DockerHub](https://hub.docker.com/r/davidmuletmelia/gestionproyectos)
   
 </div>
 
