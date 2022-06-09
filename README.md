@@ -94,6 +94,10 @@ Ahora podremos ir a las páginas. Si vamos al localhost:8080 veremos como se des
   
 ![4](https://user-images.githubusercontent.com/91748294/172957788-69747850-68a0-41d0-ac7a-c4b2b20d4182.jpeg)
   
+  ![5](https://user-images.githubusercontent.com/91748294/172960413-41e4cbc1-74e1-48c6-85d8-3a05cf6468da.jpeg)
+  
+![6](https://user-images.githubusercontent.com/91748294/172960428-33db6ff2-7911-4217-b0bf-214dfa09f514.jpeg)
+  
 </div>
 
 <div id= 'img'>
